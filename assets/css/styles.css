@@ -129,6 +129,10 @@ a {
   cursor: pointer;
 }
 
+.nav {
+  list-style: none;
+}
+
 .nav-links {
   list-style: none;
 }
@@ -159,6 +163,15 @@ a {
 
 .nav-boton:hover {
   background-color: #72573c;
+}
+
+.ver-menu {
+  color: white;
+  display: none;
+  cursor: pointer;
+  text-align: right;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
 }
 
 .ap1 {
@@ -381,10 +394,10 @@ a {
           justify-content: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
   /* column-2 pasará de tener 50% a 100% */
   .column-2 {
-    width: 50%;
+    width: 100%;
   }
   /* column-3 pasará de tener 33.33% a 100% */
   .column-3 {
@@ -393,6 +406,102 @@ a {
   /* column-4 pasará de tener 25% a 50% */
   .column-4 {
     width: 50%;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 30px;
+    height: 95px;
+  }
+  header img {
+    height: 60px;
+  }
+  .nav-boton,
+  li,
+  a {
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+  }
+  .nav-logo {
+    cursor: pointer;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .nav {
+    list-style: none;
+    width: 100%;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links.show {
+    display: block;
+  }
+  .nav-links li {
+    display: block;
+    padding: 0 20px;
+  }
+  .nav-links li a {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .nav-links li a:hover {
+    color: #a57f58;
+  }
+  .nav-boton {
+    padding: 9px 25px;
+    background-color: #a57f58;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    display: none;
+  }
+  .nav-boton.show {
+    display: block;
+  }
+  .nav-boton:hover {
+    background-color: #72573c;
+  }
+  .ver-menu {
+    display: block;
+  }
+  .ap2-l {
+    padding: 40px;
+    height: 800px;
+  }
+  .ap2-r-bot {
+    height: 400px;
+    padding: 40px;
+    padding-top: 0px;
+    padding-left: 20px;
+  }
+  .ap2-r-top {
+    height: 400px;
+    padding: 40px;
+    padding-top: 0px;
+    padding-right: 20px;
+  }
+  .ap3 {
+    padding: 40px;
+    padding-top: 0px;
+  }
+  .mapa {
+    width: 100%;
+  }
+  .ap4-titulo {
+    font-size: 4.5vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */
