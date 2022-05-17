@@ -174,6 +174,11 @@ a {
           filter: brightness(100%);
 }
 
+.ver-menu img {
+  height: 50px;
+  width: 50px;
+}
+
 .ap1 {
   position: relative;
   display: inline-block;
