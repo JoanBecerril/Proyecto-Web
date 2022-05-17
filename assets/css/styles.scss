@@ -387,7 +387,7 @@ $animationSpeed: 40s;
         height: 75px;
     }
     header img {
-        height: 50px;
+        height: 45px;
     }
     .nav-boton,
     li,
@@ -407,6 +407,7 @@ $animationSpeed: 40s;
     }
     .nav-links {
         display: none;
+        height: 300px;
     }
     .nav-links.show {
         display: block;
@@ -434,7 +435,7 @@ $animationSpeed: 40s;
         display: block;
     }
     .ap1-img {
-        height: 750px;
+        height: 600px;
     }
     .ap2-l {
         padding: 25px;
@@ -460,7 +461,7 @@ $animationSpeed: 40s;
         border-radius: 0px;
     }
     .ap4-titulo {
-        font-size: 4.5vh;
+        font-size: 4vh;
     }
     .slider {
         &::before,
