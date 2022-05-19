@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Web</title>
-    <link rel="shortcut icon" href="assets/img/FOTOS HIPERCUINA/LOGO REDUCIDO.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/FOTOS HIPERCUINA/LOGO REDUCIDO REDONDEADO.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/popup.js"></script>
 </head>
 
 <body>
@@ -36,25 +36,25 @@
     <div class="row">
         <div class="column-1 ap1">
             <img class="ap1-img" src="assets/img/FOTOS COCINAS Y BAÑOS/COCINA 6.jpg" alt="">
-            <h2 class="ap1-titulo">REFROMAS INTEGRALES</h2>
+            <h2 class="ap1-titulo">REFORMAS INTEGRALES</h2>
         </div>
     </div>
 
-    <div class="row" id="ap2">
+    <div class="row ap2" id="blur">
         <div class="column-2 ap2-l">
             <img class="ap2-l-img" src="assets/img/FOTOS COCINAS Y BAÑOS/COMEDOR 1.jpg" alt="">
             <h3 class="ap2-titulos">Reforma Integral</h3>
-            <a href="assets/html/ref-integral.html" class=""><button class="ap2-botones">Más Información</button></a>
+            <button onclick="toggle()" class="ap2-botones">Mas Información</button>
         </div>
         <div class="column-2-50 ap2-r ap2-r-top">
             <img class="ap2-r-img" src="assets/img/FOTOS COCINAS Y BAÑOS/COCINA 2.jpg" alt="">
             <h3 class="ap2-titulos">Reforma Cocina</h3>
-            <a href="assets/html/ref-cocina.html" class=""><button class="ap2-botones">Más Información</button></a>
+            <button onclick="toggle()" class="ap2-botones">Mas Información</button>
         </div>
         <div class="column-2-50 ap2-r ap2-r-bot">
             <img class="ap2-r-img" src="assets/img/FOTOS COCINAS Y BAÑOS/BAÑO 2.jpg" alt="">
             <h3 class="ap2-titulos">Reforma Baño</h3>
-            <a href="assets/html/ref-baño.html" class=""><button class="ap2-botones">Más Información</button></a>
+            <button onclick="toggle()" class="ap2-botones">Mas Información</button>
         </div>
     </div>
     <div class="row">
@@ -174,6 +174,41 @@
             </div>
         </div>
     </footer>
+
+    <!--AYUDA-->
+    <div class="ayuda">
+        <img src="assets/img/VECTORES/BOCADILLO.png" alt="">
+    </div>
+
+    <!-- POPUP -->
+
+    <div class="popup" id="popup">
+        <h2>Reformas Integrales</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, accusamus iusto. Labore iusto cumque quia, itaque nostrum odio, ducimus eum atque laudantium sequi fuga obcaecati, impedit laboriosam sit odit ex?</p>
+        <button onclick="toggle()" class="popup-botones">Cerrar</button>
+    </div>
+
+    <div class="popup" id="popup">
+        <h2>Reformas Integrales</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, accusamus iusto. Labore iusto cumque quia, itaque nostrum odio, ducimus eum atque laudantium sequi fuga obcaecati, impedit laboriosam sit odit ex?</p>
+        <button onclick="toggle()" class="popup-botones">Cerrar</button>
+    </div>
+
+    <div class="popup" id="popup">
+        <h2>Reformas Integrales</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, accusamus iusto. Labore iusto cumque quia, itaque nostrum odio, ducimus eum atque laudantium sequi fuga obcaecati, impedit laboriosam sit odit ex?</p>
+        <button onclick="toggle()" class="popup-botones">Cerrar</button>
+    </div>
+
+    <script type="text/javascript">
+        function toggle() {
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active')
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active')
+        }
+    </script>
+
 </body>
 
 </html>
