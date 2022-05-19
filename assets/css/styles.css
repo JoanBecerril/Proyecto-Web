@@ -48,6 +48,18 @@ body {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #201c1c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #181818;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -577,20 +589,19 @@ a {
   .ver-menu {
     display: block;
   }
+  .ap1 h2 {
+    font-size: 6vh;
+  }
   .ap1-img {
     height: 600px;
   }
   .ap2-l {
     padding: 25px;
-    height: 800px;
+    height: 700px;
   }
-  .ap2-r-bot {
-    height: 400px;
-    padding: 25px;
-    padding-top: 0px;
-  }
+  .ap2-r-bot,
   .ap2-r-top {
-    height: 400px;
+    height: 350px;
     padding: 25px;
     padding-top: 0px;
   }
@@ -627,7 +638,14 @@ a {
   }
   #popup {
     width: 300px;
-    height: 550px;
+    height: 500px;
+    text-align: center;
+  }
+  #popup h2 {
+    font-size: 4vh;
+  }
+  #popup p {
+    font-size: 2vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */
